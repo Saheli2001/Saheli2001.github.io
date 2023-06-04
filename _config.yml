@@ -1,6 +1,6 @@
-title: "Blog Title"
-author: "Blog Author"
-description: "Made with <b style=\"color: #f45;\">&lt;3</b>"
+title: "Saheli Datta"
+author: "Saheli Datta"
+description: "Indian Statistical Institute"
 permalink: /:title/
 lang: "en"
 excerpt_separator: "\n\n\n"
@@ -9,20 +9,20 @@ date_format: "%B %d, %Y"
 # Layout
 
 show_excerpts: true        # show article excerpts on the home page
-show_frame: true           # adds a gray frame to the site
-show_sidebar: false        # show a sidebar instead of the usual header
+show_frame: false           # adds a gray frame to the site
+show_sidebar: true       # show a sidebar instead of the usual header
 minimal: false             # use a dark header
 
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html"}
-  - {file: "README.md"}
+  - {file: "index.html", title: Home Change, icon: Home}
+  - {file: "README.md", title: About Me, icon: address-card}
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons
-  - {title: Mail, icon: envelope, url: "mailto:niklasbuschmann@users.noreply.github.com"}
-  - {title: Github, icon: github, url: "https://github.com/niklasbuschmann/contrast"}
-  - {title: Subscribe, icon: rss, url: "/feed.xml"}
+  - {title: Mail, icon: envelope, url: "mailto:sahelidatta320@gmail.com.com"}
+  - {title: Github, icon: github, url: "https://github.com/Saheli2001"}
+    - {title: LinkedIn, icon: linkedin, url: "www.linkedin.com/in/saheli-datta-301024211"}
 
 comments:
 #  disqus_shortname: ""    # see https://disqus.com/

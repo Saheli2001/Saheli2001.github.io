@@ -17,8 +17,7 @@ show_social: true          # title description and social media in footer
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "index.html", title: "Home Change", icon: home}
-  - {file: "README.md", title: "About Me", icon: address-card}
+  - {file: "README.md", title: "About Me"}
   - {file: "/Resume.pdf", title: "Resume"}
   - {title: "Blog", file: "/blog.md"}
   

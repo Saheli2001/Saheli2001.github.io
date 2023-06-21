@@ -17,7 +17,7 @@ show_social: true          # title description and social media in footer
 # Menu
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
-  - {file: "nonparametric.Rmd", title: "About Me"}
+  - {file: "README.md", title: "About Me"}
   - {file: "Resume.md", title: "Resume"}
   
 

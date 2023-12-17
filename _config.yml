@@ -18,7 +18,7 @@ show_social: true          # title description and social media in footer
 
 navigation:                # accepts {file, title, url, icon, sidebaricon}
   - {file: "README.md", title: "About Me"}
-  - {file: "Resume.md", title: "Resume"}
+  - {file: "nonparametric.Rmd", title: "Resume"}
   
 
 external:                  # shows a footer with social links - for available icons see fontawesome.com/icons

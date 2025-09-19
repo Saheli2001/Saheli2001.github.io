@@ -3,143 +3,101 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Saheli | Portfolio</title>
+  <title>Saheli's Space</title>
   <style>
     body {
+      font-family: "Garamond", serif;
       margin: 0;
-      font-family: 'Garamond', serif;
-      background-color: #fdfdfd;
+      padding: 0;
+      background: #fafafa;
       color: #222;
-      line-height: 1.6;
-      scroll-behavior: smooth;
     }
 
-    /* Navigation */
-    nav {
+    header {
       background: #222;
-      padding: 1rem;
+      color: #fff;
+      padding: 1.5rem;
       text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 1000;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    nav {
+      margin-top: 1rem;
     }
 
     nav a {
-      color: #fdfdfd;
-      margin: 0 15px;
+      margin: 0 1rem;
+      color: #fff;
       text-decoration: none;
-      font-size: 1.2rem;
+      font-weight: bold;
       transition: color 0.3s;
     }
 
     nav a:hover {
-      color: #e67e22;
+      color: #f39c12;
     }
 
-    /* Sections */
     section {
-      padding: 4rem 2rem;
-      max-width: 900px;
+      padding: 3rem 2rem;
+      max-width: 800px;
       margin: auto;
       opacity: 0;
-      transform: translateY(20px);
-      transition: opacity 0.8s ease, transform 0.8s ease;
+      transform: translateY(30px);
+      animation: fadeInUp 1s forwards;
     }
 
-    section.visible {
-      opacity: 1;
-      transform: translateY(0);
+    section:nth-child(1) { animation-delay: 0.2s; }
+    section:nth-child(2) { animation-delay: 0.6s; }
+    section:nth-child(3) { animation-delay: 1s; }
+    section:nth-child(4) { animation-delay: 1.4s; }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
     }
 
-    h1, h2 {
-      text-align: center;
-      margin-bottom: 2rem;
-    }
-
-    /* Cards */
-    .card {
-      border: 1px solid #ccc;
-      padding: 1.5rem;
-      margin-bottom: 1.5rem;
-      border-radius: 10px;
-      background: #fff;
-      box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
-      transition: transform 0.3s, box-shadow 0.3s;
-      cursor: pointer;
-    }
-
-    .card:hover {
-      transform: scale(1.05);
-      box-shadow: 0px 4px 15px rgba(0,0,0,0.2);
-    }
-
-    .card-details {
-      display: none;
-      margin-top: 1rem;
-      font-size: 0.95rem;
-      color: #555;
-    }
-
-    .card.active .card-details {
-      display: block;
+    h2 {
+      border-bottom: 2px solid #eee;
+      padding-bottom: 0.5rem;
+      margin-bottom: 1rem;
     }
   </style>
 </head>
 <body>
+  <header>
+    <h1>Saheli's Space</h1>
+    <nav>
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#blogs">Blogs</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
 
-  <!-- Navigation -->
-  <nav>
-    <a href="#about">About</a>
-    <a href="#blogs">Blogs</a>
-    <a href="#projects">Projects</a>
-  </nav>
-
-  <!-- About Section -->
   <section id="about">
-    <h2>About Me</h2>
-    <p>Coming Soon... A short academic intro here.</p>
+    <h2>About</h2>
+    <p>Coming soon...</p>
   </section>
 
-  <!-- Blogs Section -->
-  <section id="blogs">
-    <h2>Key Blogs</h2>
-
-    <div class="card">
-      <h3>Blog Title 1</h3>
-      <div class="card-details">
-        A short teaser about this blog post... <em>Coming Soon</em>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Blog Title 2</h3>
-      <div class="card-details">
-        A short teaser about this blog post... <em>Coming Soon</em>
-      </div>
-    </div>
-  </section>
-
-  <!-- Projects Section -->
   <section id="projects">
-    <h2>Key Projects</h2>
-
-    <div class="card">
-      <h3>Project Title 1</h3>
-      <div class="card-details">
-        A short description about this project... <em>Coming Soon</em>
-      </div>
-    </div>
-
-    <div class="card">
-      <h3>Project Title 2</h3>
-      <div class="card-details">
-        A short description about this project... <em>Coming Soon</em>
-      </div>
-    </div>
+    <h2>Projects</h2>
+    <p>Coming soon...</p>
   </section>
 
-  <script>
-    // Reveal sections on scroll
-    const sections = document.querySelectorAll("section");
-    const revealOnScroll = () => {
-      sections.forEach(sectio
+  <section id="blogs">
+    <h2>Blogs</h2>
+    <p>Coming soon...</p>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Coming soon...</p>
+  </section>
+</body>
+</html>

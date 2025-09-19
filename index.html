@@ -1,18 +1,52 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Saheli's GitHub Page</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Saheli's Lab</title>
+  <style>
+    body {
+      font-family: "Fira Code", monospace;
+      background: #fafafa;
+      color: #222;
+      margin: 0;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+    }
+    h1 {
+      font-size: 2rem;
+      font-weight: bold;
+      color: #e91e63;
+      margin: 0;
+    }
+    p {
+      margin-top: 1rem;
+      font-size: 1.2rem;
+      color: #555;
+    }
+    #typing {
+      font-size: 1.5rem;
+      border-right: 2px solid #e91e63;
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 2.5s steps(20, end) forwards, blink 0.8s infinite;
+    }
+    @keyframes typing {
+      from { width: 0 }
+      to { width: 14ch }
+    }
+    @keyframes blink {
+      0%, 100% { border-color: transparent }
+      50% { border-color: #e91e63 }
+    }
+  </style>
 </head>
 <body>
-  <h1>Hey, this is Saheli</h1>
-  <p>Welcome to my GitHub Page!  
-  </p>
-
-  <h2>Sections coming soon:</h2>
-  <ul>
-    <li> </li>
-    <li> </li>
-    <li> </li>
-  </ul>
+  <h1 id="typing">Coming soon...</h1>
+  <p>(This lab is still warming up)</p>
 </body>
 </html>
